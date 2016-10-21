@@ -21,48 +21,55 @@
 // =============================================================================
     $max-width:1200px;
   //Max-width to work
-    @mixin max-width(){
-      max-width: $max-width;margin:0 auto;padding:0 15px;
+    @mixin workspace($max-width){
+      max-width: $max-width;
+      margin: 0 auto;
+      padding-right: 15px;
+      padding-left: 15px;
     }
-    @mixin max-width-80(){
-      max-width: $max-width * .8;margin:0 auto;padding:0 15px;
-    }
-    @mixin max-width-50(){
-      max-width: $max-width * .5;margin:0 auto;padding:0 15px;
+    @mixin workspace-80($max-width){
+      max-width: $max-width * .8;
+      margin:0 auto;
+      padding-right: 15px;
+      padding-left: 15px;
     }
   //Container space
     @mixin box-75{
-      padding:75px 0;
+      padding-right: 75px;
+      padding-left: 75px;
     }
     @mixin box-50{
-      padding:50px 0;
+      padding-right: 50px;
+      padding-left: 50px;
     }
     @mixin box-25{
-      padding:25px 0;
+      padding-right: 25px;
+      padding-left: 25px;
     }
     @mixin box-15{
-      padding:15px 0;
+      padding-right: 15px;
+      padding-left: 15px;
     }
 
   //Paddings
     @mixin top-50{
-      padding-top:50px
+      margin-top:50px
     }
     @mixin top-25{
-      padding-top:25px
+      margin-top:25px
     }
     @mixin top-15{
-      padding-top:15px
+      margin-top:15px
     }
 
     @mixin sub-50{
-      padding-bottom:50px
+      margin-bottom:50px
     }
     @mixin sub-25{
-      padding-bottom:25px
+      margin-bottom:25px
     }
     @mixin sub-15{
-      padding-bottom:15px
+      margin-bottom:15px
     }
 
 
